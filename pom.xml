@@ -106,6 +106,7 @@
     <dependency>
 	    <groupId>io.micrometer</groupId>
 	    <artifactId>micrometer-registry-prometheus</artifactId>
+       <version>1.1.0.redhat-00001</version>
     </dependency>
     <dependency>
       <groupId>org.jboss.arquillian.junit</groupId>
