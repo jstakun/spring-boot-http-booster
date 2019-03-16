@@ -76,14 +76,14 @@
     </dependencies>
   </dependencyManagement>
   <dependencies>
-    <!--dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-tomcat</artifactId>
-    </dependency-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-undertow</artifactId>
+      <artifactId>spring-boot-starter-tomcat</artifactId>
     </dependency>
+    <!--dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-undertow</artifactId>
+    </dependency-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-actuator</artifactId>
@@ -91,18 +91,18 @@
     <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-web</artifactId>
-        <exclusions>
+        <!--exclusions>
         <exclusion>
           <artifactId>spring-boot-starter-tomcat</artifactId>
           <groupId>org.springframework.boot</groupId>
         </exclusion>
-       </exclusions>
+       </exclusions-->
     </dependency>
     <dependency>
 	<groupId>io.micrometer</groupId>
 	<artifactId>micrometer-registry-prometheus</artifactId>
-  <!--version>1.1.0.redhat-00001</version-->
-  <version>1.1.3</version>    
+  <version>1.1.0.redhat-00001</version>
+  <!--version>1.1.3</version-->    
 </dependency>
     <dependency>
       <groupId>org.jboss.resteasy</groupId>
@@ -130,12 +130,12 @@
       <groupId>org.arquillian.cube</groupId>
       <artifactId>arquillian-cube-openshift</artifactId>
       <scope>test</scope>
-      <!--exclusions>
+      <exclusions>
         <exclusion>
           <groupId>io.undertow</groupId>
           <artifactId>undertow-core</artifactId>
         </exclusion>
-      </exclusions-->
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
